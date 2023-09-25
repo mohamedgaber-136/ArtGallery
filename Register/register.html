@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RegistrationForm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- favIcon -->
+	<link rel="icon" href="../Assets/art-gallery-emblem-vector-21174184.jpg">
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
+		<div class="inner">
+			<div class="image-holder">
+				<img src="images/pexels-mart-production-7330926.jpg" alt="">
+			</div>
+			<form action="" onsubmit="event.preventDefault()">
+				<h3>Registration Form</h3>
+				<div class="form-group">
+					<input type="text" placeholder="First Name" id="FirstName" class="form-control">
+					<label id="firstNamevalid" >notvalid</label>
+					<input type="text" placeholder="Last Name" id="LastName" class="form-control">
+					<label id="lastNamevalid" >notvalid</label>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" placeholder="Username" id="Username" class="form-control">
+					<i class="zmdi zmdi-account"></i>
+					<label id="uservalid" >notvalid</label>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" placeholder="Email Address"  id="email" class="form-control">
+					<i class="zmdi zmdi-email"></i>
+					<label id="emailvalid" >notvalid</label>
+					<label id="registerEmail">Already Registered</label>
+					
+				</div>
+				<div class="form-wrapper">
+					<select name="gender"  class="form-control" id="gender">
+						<option value="" disabled selected>Gender</option>
+						<option value="male">Male</option>
+						<option value="femal">Female</option>
+						<option value="other">Other</option>
+					</select>
+					<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="password" placeholder="Password" id="password" class="form-control">
+					<label id="passwordvalid" >notvalid (Numbers Only Required minimum 7 Numbers)</label>
+					<i class="zmdi zmdi-lock"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="password" placeholder="Confirm Password" id="confirmPassword" class="form-control">
+					<i class="zmdi zmdi-lock"></i>
+				</div>
+				<button id="registerBtn">Register
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+<script src="register.js"></script>
+</body>
+
+</html>

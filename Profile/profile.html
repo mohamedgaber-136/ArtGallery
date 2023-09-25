@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontAwesom  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <!-- Icon  -->
+    <link rel="icon" href="Assets/art-gallery-emblem-vector-21174184.jpg">
+    <!-- Bs5 -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- MainCss -->
+    <link rel="stylesheet" href="profile.css">
+    <title>Your Profile</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md   p-0">
+        <div class="container-fluid p-0 ">
+          <a class="navbar-brand w-50 d-flex align-items-center justify-content-center justify-content-md-center"
+            href="#"><img src="Assets/art-gallery-emblem-vector-21174184-removebg-preview.png" alt="Logo" width="80px"><span
+              class="text-dark logoText">ART GALLERY</span></a>
+          <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-angles-down"></i>
+          </button>
+          <div class="collapse navbar-collapse w-50 d justify-content-center " id="navbarSupportedContent">
+            <ul class="navbar-nav gap-2  align-items-center mb-2 mb-lg-0 b  ">
+             
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <button  class="nav-link text-dark px-4 py-0 border-0  bg-dark text-white justify-content-center LogOutBtn rounded-pill LogInBtn "
+                  aria-current="page" id="LogOutBtn">LogOut</button>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="profileIcon" id="circle">
+    </div>
+    <div class="dataTable d-flex flex-column justify-content-center align-items-start p-3">
+        <h2 class="align-self-center mb-3">Your Profile Data </h2>
+        <div class="userName d-flex align-items-center gap-2">
+            <label >Your Name: </label>            <span id="userName"></span>
+        </div>
+        <div class="userEmail d-flex align-items-center gap-2">
+            <label >Your Email: </label>
+            <span id="userEmail"></span>
+        </div>
+        <div class="userGender d-flex align-items-center gap-2">
+            <label >Your gender: </label>
+            <span id="userGender"></span>
+        </div>
+        <div class="userimg d-flex align-items-center gap-2">
+            <label >Your favourti Images count :  <span id="userimg"></span> </label>
+            
+        </div>
+    
+    </div>
+    <div class="container">
+    </div>
+    <div class="parent p-5 gap-3 d-flex " id="parent">
+       
+
+    </div>
+    
+
+
+    <!-- bs5 js  -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <!-- main js  -->
+  <script src="profile.js"></script>
+</body>
+
+</html>

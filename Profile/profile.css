@@ -1,0 +1,98 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.profileIcon {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+}
+.dataTable {
+
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px rgb(228, 220, 220);
+  height: 200px;
+
+  width: 40%;
+}
+@media (max-width: 426px) {
+  .dataTable {
+    width: 90%;
+  }
+}
+
+ @media (max-width: 426px) {
+  .child {
+    width: 90%;
+  }
+ 
+} 
+h2{
+  overflow: hidden;
+}
+.child{
+    width: 300px;
+    height: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+  object-fit: cover;
+  transition: 0.5s;
+}
+img:hover{
+  transform: scale(1.1);
+}
+@media(max-width:767px){
+  .parent{
+    flex-direction: column;
+  }
+}
+.navbar {
+  background-color: white;
+  height: 100px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999999999;
+}
+.nav-link{
+  color: #07051a;
+}
+@media (max-width: 767px) {
+  .navbar-nav{
+    padding: 20px 0;
+    background-color: black;
+  }
+  .nav-link{
+    width: 100px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+  }
+}
