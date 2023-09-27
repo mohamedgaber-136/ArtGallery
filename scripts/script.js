@@ -115,14 +115,25 @@ function heartPress(t, imgSrc) {
     sessionStorage.setItem("CurrentUser", JSON.stringify(CurrentUser));
   }
 }
-
+function findheart(x) {
+  if (CurrentUser != null) {
+    for (let ele of CurrentUser.FavouriteImgs) {
+      if (ele == x) {
+        console.log(x)
+        return true;
+      }
+    }
+  }
+}
 // display function------------------------------
 function display(data) {
   if (switchKey) {
     for (let ele of data) {
       cartona += `<div class='child' )'>
       <img onClick='showSelectedImg(("${ele.src.portrait}"),("${ele.alt}"),("${ele.photographer}"),("${ele.photographer_url}"))'  width=100% height=100% src=' ${ele.src.portrait}'>
-      <i class="fa-solid fa-heart heart" onClick='heartPress(this,("${ele.src.portrait}"))'   ></i>
+      <i class="fa-solid ${
+        findheart(ele.src.portrait) ? "redColor" : ""
+      } fa-heart heart" onClick='heartPress(this,("${ele.src.portrait}"))'   ></i>
       </div>`;
     }
   }
