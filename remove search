@@ -190,7 +190,7 @@ searchBar.addEventListener("change", function () {
 
 searchBtn.addEventListener("click", () => {
   cartona = "";
-  navbarSupportedContent.classList.remove("show");
+  
   ApiControl("v1", searchNav.value);
 });
 magnifyingGlass.addEventListener("click", () => {
